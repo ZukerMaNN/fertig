@@ -13,6 +13,13 @@
     @include md {
       display: none;
     }
+    &.open {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: $gap;
+      @include unlist(0 0 0 -10px);
+    }
   }
   &__item {
   }

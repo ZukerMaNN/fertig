@@ -325,6 +325,18 @@ a {
 
   border: 3px solid #d53d27;
 }
+.header-navbar__list.open {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+
+  display: block;
+
+  margin: 0 0 0 -10px;
+  padding: 0;
+
+  list-style: none;
+}
 .header-navbar__link {
   display: block;
 
@@ -659,6 +671,11 @@ a {
   }
   .header-content__title {
     margin: 0 0 33px 0;
+  }
+  .header-menu {
+    background-color: rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow: -3px 3px 20px -10px black;
+            box-shadow: -3px 3px 20px -10px black;
   }
   .header-navbar__list {
     display: none;
