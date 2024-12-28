@@ -4,7 +4,7 @@
 .header-navbar {
   &__list {
     @include md-min {
-      display: grid;
+      display: grid !important;
       justify-content: end;
       gap: $gap;
       grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
@@ -12,16 +12,17 @@
     }
     @include md {
       display: none;
-    }
-    &.open {
-      display: block;
       position: absolute;
       top: 100%;
       right: $gap;
       @include unlist(0 0 0 -10px);
+      text-align: right;
     }
   }
   &__item {
+    @include md {
+      margin: $gap;
+    }
   }
   &__link {
     display: block;
@@ -29,6 +30,12 @@
     font-size: 1.125rem;
     letter-spacing: 0.09em;
     transition: color 0.3s;
+    @includemd-min {
+      padding: $gap $gap-sm;
+    }
+    @include md {
+      padding: $gap-sm $gap 0;
+    }
     &:hover,
     &:focus {
       color: $color-accent;
