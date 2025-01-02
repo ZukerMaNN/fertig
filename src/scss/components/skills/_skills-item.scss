@@ -2,10 +2,21 @@
 @use "../../mixins" as *;
 
 .skills-item {
-  background-color: $color-primary;
   position: relative;
+
   overflow: hidden;
+
+  background-color: $color-primary;
   &__title {
+    z-index: 1;
+
+    margin: 0;
+
+    letter-spacing: 0.1em;
+
+    font-family: $font-main;
+    font-size: 20px;
+
     @include abs-position;
     @include md-min {
       font-size: 1.25rem; // 20px;
@@ -13,29 +24,30 @@
     @include md {
       font-size: 1.125rem; // 18px ;
     }
-    z-index: 1;
-    margin: 0;
-    font-family: $font-main;
-    font-size: 20px;
-    letter-spacing: 0.1em;
   }
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: $gap;
+
     height: 100%;
+    padding: $gap;
+
     transition: color 0.3s;
   }
   &__image {
-    background-size: cover;
-    background-position: center;
     transition: transform 0.3s;
+
+    background-position: center;
+    background-size: cover;
+
     @include abs-position;
   }
   &__overlay {
-    background-color: rgba($color-primary, 0.8);
     transition: background-color 0.3s;
+
+    background-color: rgba($color-primary, 0.8);
+
     @include abs-position;
   }
   &:hover {

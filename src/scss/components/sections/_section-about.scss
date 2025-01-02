@@ -3,11 +3,13 @@
 
 .about {
   background-color: $color-gray-light;
+
   @extend %section;
 
   &__container {
-    @extend %container;
     display: grid;
+
+    @extend %container;
     @include lg-min {
       gap: $gap-x5;
       grid-template-columns: 1fr 271px;
@@ -28,24 +30,30 @@
     }
   }
 
-  &__title {
-  }
+
   &__description {
     position: relative;
+
     letter-spacing: 0.05em;
+
     line-height: 1.33333em;
+
     @include md-min {
       font-size: 1.125rem;
     }
     @include sm-min {
       &::before {
-        top: 5px;
-        content: "";
         position: absolute;
+        top: 5px;
+
         width: 1px;
-        min-height: 200px;
         height: 50%;
+        min-height: 200px;
+
+        content: "";
+
         background-color: rgba($color-gray, 0.5);
+
         @include lg-min {
           right: -$gap * 2.5;
         }
@@ -60,6 +68,7 @@
   }
   &__picture {
     text-align: center;
+
     @include md-sm {
       margin-top: $gap-x5;
     }
