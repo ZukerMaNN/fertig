@@ -41,7 +41,7 @@
     @include md {
       padding: $gap-sm $gap 0;
     }
-    @includemd-min {
+    @include md-min {
       padding: $gap $gap-sm;
     }
     &:hover,

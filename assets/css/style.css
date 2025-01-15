@@ -293,7 +293,7 @@ a {
   align-content: center;
 
   min-height: 100vh;
-  padding: 150 px 0;
+  padding: 150px 0;
 
   background-color: #2d3651;
   background-image: url(../images/img-header.png);
@@ -365,11 +365,6 @@ a {
   letter-spacing: 0.09em;
 
   font-size: 1.125rem;
-}
-@includemd-min {
-  .header-navbar__link {
-    padding: 20px 10px;
-  }
 }
 .header-navbar__link:hover,
 .header-navbar__link:focus {
@@ -631,7 +626,6 @@ a {
 }
 
 .subscribe {
-  margin-bottom: 200px;
   padding: 30px 0;
 
   background-color: #2d3651;
@@ -651,8 +645,8 @@ a {
   padding-right: 30px;
   padding-left: 30px;
 
-  -webkit-transition: background-color 0.3s, border-color 0.3;
-          transition: background-color 0.3s, border-color 0.3;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
   letter-spacing: 0.1em;
 
   color: #ffffff;
@@ -721,8 +715,8 @@ a {
   padding: 0.5em 1em;
 
   cursor: pointer;
-  -webkit-transition: background-color 0.3s, border-color 0.3;
-          transition: background-color 0.3s, border-color 0.3;
+  -webkit-transition: background-color 0.3s;
+          transition: background-color 0.3s;
   letter-spacing: 0.1em;
 
   color: #ffffff;
@@ -902,9 +896,6 @@ a {
   .skills {
     padding: 10px;
   }
-  .skills__container {
-    gap: 10px;
-  }
   .skills__actions {
     margin-bottom: 30px;
   }
@@ -941,6 +932,9 @@ a {
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(40px, -webkit-max-content));
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+  }
+  .header-navbar__link {
+    padding: 20px 10px;
   }
   .header-navbar__btn {
     display: none;
@@ -985,7 +979,7 @@ a {
     grid-template-columns: 1fr 271px;
   }
   .subscribe-item__control {
-    font-size: 1.125;
+    font-size: 1.125rem;
   }
   .posts__grid {
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
@@ -1143,6 +1137,7 @@ a {
     padding: 20px;
   }
   .skills__container {
+    gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     grid-template-columns: 1fr;
   }
